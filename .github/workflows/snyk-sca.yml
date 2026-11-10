@@ -14,8 +14,8 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
-      - run: npm install --legacy-peer-deps
+          node-version: 22
+      - run: npm install --legacy-peer-deps --ignore-scripts
       - name: Snyk SCA Scan
         uses: snyk/actions/node@master
         env:
