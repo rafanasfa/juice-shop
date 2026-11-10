@@ -1,0 +1,11 @@
+# Snyk policy file
+version: v1.25.0
+ignore:
+  SNYK-JS-MARSDB-480405:
+    - '*':
+        reason: 'Unmaintained dev dependency, tidak diikutsertakan ke production bundle'
+        expires: 2026-12-31T00:00:00.000Z
+  SNYK-JS-URIJS-19963963:
+    - '*':
+        reason: 'Dependency dari modul pendukung, risiko DoS diminimalkan'
+        expires: 2026-12-31T00:00:00.000Z
